@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.iflytek.ucenter.mapper.MoocquestionMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.iflytek.ucenter.model.po.Moocquestion">
+        <id column="ObjectID" property="objectid" />
+        <result column="BusinessID" property="businessid" />
+        <result column="Type" property="type" />
+        <result column="Content" property="content" />
+        <result column="Analysis" property="analysis" />
+        <result column="Answer" property="answer" />
+        <result column="Level" property="level" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ObjectID, BusinessID, Type, Content, Analysis, Answer, Level
+    </sql>
+
+</mapper>

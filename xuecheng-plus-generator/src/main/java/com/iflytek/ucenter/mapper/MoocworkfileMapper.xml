@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.iflytek.ucenter.mapper.MoocworkfileMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.iflytek.ucenter.model.po.Moocworkfile">
+        <id column="ObjectID" property="objectid" />
+        <result column="BusinessID" property="businessid" />
+        <result column="Name" property="name" />
+        <result column="IsDrag" property="drag" />
+        <result column="FileName" property="filename" />
+        <result column="StorageName" property="storagename" />
+        <result column="Size" property="size" />
+        <result column="Suffix" property="suffix" />
+        <result column="UploadID" property="uploadid" />
+        <result column="UploadName" property="uploadname" />
+        <result column="UploadTime" property="uploadtime" />
+        <result column="Type" property="type" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ObjectID, BusinessID, Name, IsDrag, FileName, StorageName, Size, Suffix, UploadID, UploadName, UploadTime, Type
+    </sql>
+
+</mapper>

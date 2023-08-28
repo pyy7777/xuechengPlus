@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.iflytek.ucenter.mapper.MoocworkMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.iflytek.ucenter.model.po.Moocwork">
+        <id column="ObjectID" property="objectid" />
+        <result column="MoocCourseID" property="mooccourseid" />
+        <result column="MoocChapterID" property="moocchapterid" />
+        <result column="MoocSectionID" property="moocsectionid" />
+        <result column="Type" property="type" />
+        <result column="WorkModel" property="workmodel" />
+        <result column="Sort" property="sort" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ObjectID, MoocCourseID, MoocChapterID, MoocSectionID, Type, WorkModel, Sort
+    </sql>
+
+</mapper>

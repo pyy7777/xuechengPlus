@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.iflytek.ucenter.mapper.ClassinfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.iflytek.ucenter.model.po.Classinfo">
+        <id column="ObjectID" property="objectid" />
+        <result column="CollegeID" property="collegeid" />
+        <result column="CollegeName" property="collegename" />
+        <result column="SpecialtyID" property="specialtyid" />
+        <result column="SpecialtyName" property="specialtyname" />
+        <result column="ClassName" property="classname" />
+        <result column="Code" property="code" />
+        <result column="TeacherID" property="teacherid" />
+        <result column="TeacherName" property="teachername" />
+        <result column="AdmissionYear" property="admissionyear" />
+        <result column="EduYear" property="eduyear" />
+        <result column="DataSource" property="datasource" />
+        <result column="CreatorID" property="creatorid" />
+        <result column="CreatorName" property="creatorname" />
+        <result column="CreateTime" property="createtime" />
+        <result column="IsDelete" property="delete" />
+        <result column="DockingSchoolID" property="dockingschoolid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ObjectID, CollegeID, CollegeName, SpecialtyID, SpecialtyName, ClassName, Code, TeacherID, TeacherName, AdmissionYear, EduYear, DataSource, CreatorID, CreatorName, CreateTime, IsDelete, DockingSchoolID
+    </sql>
+
+</mapper>
